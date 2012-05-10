@@ -1,0 +1,6 @@
+<%= simple_form_for @post do |f| %>
+  <%= f.input :name %>
+  <%= f.input :text %>
+  <%= f.input :linked, input_html: { 'data-pre' => @post.linked_posts.map(&:attributes).to_json } %>
+  <%= f.submit nil %>
+<% end %>
