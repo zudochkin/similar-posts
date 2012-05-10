@@ -2,6 +2,7 @@
 We have two models: **Post**(`name, text`) and **PostRelation**(`post_id, linked_post_id`)
 
 ##### PostRelation model
+
   class PostRelation < ActiveRecord::Base
     attr_accessible :linked_post_id, :post_id
 
